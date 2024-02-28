@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="icon" href="HTML5_Logo.png" type="image/x-icon"> <!--rel-realtinship -->
+    <link rel="stylesheet" href="main.css" type="text/css"> <!--link to the css file - relative reference -->
+</head>
+
+<body>
+    <header>
+        <section id="sec1">
+            <h1>Hello World!</h1>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="#sec1">Section1</a></li>
+                    <li><a href="#sec2">Section2</a></li>
+                    <li><a href="#contact">This is ME</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <img src="HTML5_Logo.png" alt="HTML Logo" width="100" title="HTML">
+
+            <figure>
+                <img src="HTML5_Logo.png" alt="HTML Logo" width="100" title="HTML" loading="lazy">
+                <figcaption>
+                    HTML Logo
+                </figcaption>
+            </figure>
+
+            <p>I will <strong>finish</strong> this <br> course</p> <!--strong - inline element , p- block element  -->
+
+
+
+
+
+            <h2>Hello World!</h2>
+            <p><a href="aboutme.html">About me</a></p>
+            <p>I will finish this &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; course</p>
+            <address>Jaffna</address>
+
+        </section>
+        <figure>
+            <figcaption>HTML code</figcaption>
+            <code>&lt;h1&gt;Hello World&lt;h1&gt;</code>
+        </figure>
+        <section id="sec2">
+            <h2>Full Stack</h2>
+            <Ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React</li>
+                <li>JS</li>
+            </Ol>
+            <ul>
+                <li>Car</li>
+                <li>Bus</li>
+                <li>Bike</li>
+                <li>Train</li>
+                <li>Cycle</li>
+                <li>Ship</li>
+                <li>Van
+                    <ul>
+                        <li>Toyota</li>
+                        <li>Nissan</li>
+                        <li>Honda</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+        <dl>
+            <dt>Mora</dt>
+            <dd>in Katubedda</dd>
+
+            <dt>Jaffna</dt>
+            <dd>In Kilinochi</dd>
+            <dt>UOV</dt>
+            <dd>In Vavuniya</dd>
+        </dl>
+
+
+        <a href="https://www.youtube.com/">YouTube</a> <!-- give the full link- absolute reference -->
+        <p>I go to <abbr title="Bank of Ceylon">BOC</abbr></p>
+        <table>
+            <caption>Mark Sheet</caption>
+            <thead>
+                <tr>
+                    <th>Subjects</th>
+                    <th>Marks</th>
+                    <th>Highest Mark</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maths</td>
+                    <td>95</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>80</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Health</td>
+                    <td>40-WE</td>
+                    <td>49-WE</td>
+                </tr>
+                <tr>
+                    <td>45-CA</td>
+                    <td>50-CA</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">These are my marks</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <article id="contact">
+            <h3>Contact Me</h3>
+            <p>I would like to hear from u</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstName">First Name :</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Type ur first name here"
+                            autocomplete="on" autofocus required> <!--for in label = id in input-->
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name :</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </p>
+                    <p>
+                        <label for="password">Password :</label>
+                        <input type="password" name="password" id="password" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone No :</label>
+                        <input type="text" name="phone" id="phone" autocomplete="on" required
+                            placeholder="076-705-4272">
+
+                    </p>
+                    <p>
+                        <label for="age">Age :</label>
+                        <input type="number" name="age" id="age">
+                    </p>
+                    <p>
+                        <label for="contentt">Fav Content from Me</label>
+                        <select name="contentt" id="contentt" multiple size="2">
+                            <optgroup label="FullStack">
+                                <option value="frontend">Frontend</option>
+                                <option value="backend">backend</option>
+                                <option value="se">SE</option>
+                            </optgroup>
+                            <optgroup label="DSE">
+                                <option value="ai">AI</option>
+                                <option value="ml" selected>ML</option>
+                            </optgroup>
+                            <optgroup label="Other">
+                                <option value="cloud">Cloud</option>
+                                <option value="cyber">Cyber</option>
+                                <option value="iot">IOT</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="content">What path I will choose</label>
+                        <input type="text" name="contact" id="content" list="content-list">
+                        <datalist id="content-list">
+                            <option value="frontend">
+                            <option value="backend">
+                            <option value="se">
+                            <option value="ai">
+                            <option value="ml" selected>
+                            <option value="cloud">
+                            <option value="cyber">
+                            <option value="iot">
+                            </datalist>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Fav Food</legend>
+                    <p>
+                        <input type="radio" name="food" id="chicken" value="chicken">
+                        <label for="chicken">chicken</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="mutton" value="mutton">
+                        <label for="mutton">Mutton</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="beef" value="beef">
+                        <label for="beef">Beef</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Fav Colour</legend>
+                    <p>
+                        <input type="checkbox" name="color" id="blue" value="blue">
+                        <label for="blue">Blue</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="color" id="red" value="red">
+                        <label for="red">Red</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="color" id="green" value="green">
+                        <label for="green">Green</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Ur Msg </label>
+                    <p>
+                        <textarea name="message" id="message" cols="60" rows="10"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            </form>
+
+        </article>
+
+    </main>
+    <br><br><br><br><br>
+    <footer>
+        <hr>
+        &lt; &lt; &copy;Vibulan PVT LTD &gt;
+        <p><a href="#">back to top</a></p>
+    </footer>
+
+
+</body>
+
+</html>
